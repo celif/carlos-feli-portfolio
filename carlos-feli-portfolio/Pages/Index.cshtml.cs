@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace carlos_feli_portfolio.Pages
+namespace about_carlos_feliciano.Pages
 {
     public class IndexModel : PageModel
     {

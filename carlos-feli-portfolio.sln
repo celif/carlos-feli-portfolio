@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "carlos-feli-portfolio", "carlos-feli-portfolio\carlos-feli-portfolio.csproj", "{740328D7-3BC0-4D09-AE34-A7268BF6105A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest", "NUnitTest\NUnitTest.csproj", "{15A96C4D-94EB-4118-9068-3B37A98013B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTest", "NUnitTest\NUnitTest.csproj", "{15A96C4D-94EB-4118-9068-3B37A98013B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitReference", "NUnitReference\NUnitReference.csproj", "{CAA00694-30B8-468B-B403-8DBAC475F1C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{15A96C4D-94EB-4118-9068-3B37A98013B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15A96C4D-94EB-4118-9068-3B37A98013B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15A96C4D-94EB-4118-9068-3B37A98013B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA00694-30B8-468B-B403-8DBAC475F1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA00694-30B8-468B-B403-8DBAC475F1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA00694-30B8-468B-B403-8DBAC475F1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA00694-30B8-468B-B403-8DBAC475F1C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,10 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NUnitTest\NUnitTest.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\js\" />

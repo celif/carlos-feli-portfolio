@@ -11,20 +11,20 @@ namespace BundleConfig
         public static int RegisterBundles(BundleCollection bundles)
         {
             // Add 5 bundles
-            bundles.Add(new ScriptBundle("./wwwroot/js").Include(
-                        "./wwwroot/js/jquery-3.3.1.slim.min.js"));
+            bundles.Add(new ScriptBundle("~/wwwroot/js").Include(
+                        "~/wwwroot/js/jquery-3.3.1.slim.min.js"));
 
             bundles.Add(new ScriptBundle("./wwwroot/js").Include(
-                        "./wwwroot/js/popper.min.js"));
+                        "~/wwwroot/js/popper.min.js"));
 
             bundles.Add(new ScriptBundle("./wwwroot/js").Include(
-                        "./wwwroot/js/bootstrap.min.js"));
+                        "~/wwwroot/js/bootstrap.min.js"));
 
             bundles.Add(new ScriptBundle("./wwwroot/css").Include(
-                      "./wwwroot/css/site.css"));
+                      "~/wwwroot/css/site.css"));
 
             bundles.Add(new StyleBundle("./wwwroot/css").Include(
-                      "./wwwroot/css/bootstrap.min.css"));
+                      "~/wwwroot/css/bootstrap.min.css"));
 
 
             return bundles.Count;

@@ -58,6 +58,39 @@ namespace SeleniumTest
             Assert.AreEqual(URL, "https://carlos-feli-portfolio-dev-as.azurewebsites.net/#experience");
         }
 
+        [Test]
+        public void profilePictureTest()
+        {
+            // Test to see if the profile picture becomes enlarged and centered when clicked
+            // and if it returns to normal size when the user anywhere clicks outside the image.
+
+            driver.Url = "https://carlos-feli-portfolio-dev-as.azurewebsites.net/";
+
+            IWebElement profilePicture = driver.FindElement(By.Id("profile-picture"));
+            profilePicture.Click();
+
+            bool enlargedImage = driver.FindElement(By.Id("larger-image")).Displayed;
+
+            if (enlargedImage)
+            {
+                IWebElement myName = driver.FindElement(By.Id("name"));
+                myName.Click();
+                enlargedImage = driver.FindElement(By.Id("larger-image")).Displayed;
+                if(!enlargedImage)
+                {
+                    Assert.Pass();
+                }
+                else
+                {
+                    Assert.Fail();
+                }
+            }
+            else
+            {
+                Assert.Fail();
+            }
+        }
+
         [TearDown]
         public void closeBrowser()
         {

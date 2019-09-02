@@ -91,6 +91,41 @@ namespace SeleniumTest
             }
         }
 
+        [Test]
+        public void socialMediaLinkTest()
+        {
+            driver.Url = "https://carlos-feli-portfolio-dev-as.azurewebsites.net/";
+
+
+            // Test the 'mailto:' link
+            IWebElement mailtoLink = driver.FindElement(By.Id("mailto"));
+
+            String hrefLink = mailtoLink.GetAttribute("href");
+
+            // Check the href value first
+            Assert.AreEqual(hrefLink, "mailto:cfeli031@fiu.edu");
+
+            mailtoLink.Click();
+
+            String URL = driver.Url;
+
+            Assert.AreEqual(URL, "mailto:cfeli031@fiu.edu");
+
+            // Test clicking the Github profile link
+            IWebElement githubLink = driver.FindElement(By.Id("github"));
+
+            hrefLink = githubLink.GetAttribute("href");
+
+            Assert.AreEqual(hrefLink, "https://github.com/celif");
+
+            // Go to the Github profile page
+            githubLink.Click();
+
+            URL = driver.Url;
+            Assert.AreEqual(URL, "https://github.com/celif");
+
+        }
+
         [TearDown]
         public void closeBrowser()
         {
